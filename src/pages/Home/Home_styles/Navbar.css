@@ -1,0 +1,213 @@
+/* Modern Navbar Styling with Animations */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 25px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    backdrop-filter: blur(0px);
+}
+
+.navbar.nav-scrolled {
+    padding: 10px 25px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.navbar.bg-dark {
+    background-color: rgba(22, 22, 22, 0.95) !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.bg-transparent1 {
+    background-color: transparent !important;
+}
+
+/* Logo Styling with Animation */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    height: 45px;
+    width: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Navbar Links with Animated Underline */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 18px;
+    position: relative;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fcb900;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fcb900 !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Button with Animation */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+    width: 28px;
+    height: 2px;
+    display: block;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Styling with Animations */
+@media (max-width: 900px) {
+    .navbar-collapse {
+        background-color: rgba(22, 22, 22, 0.98);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 10px 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .navbar-collapse.show {
+        max-height: 300px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-link {
+        color: white !important;
+        padding: 12px 0;
+        width: 100%;
+        display: block;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .mob-noscroll {
+        font-weight: bold;
+    }
+}
+
+/* Button Styling with Animation */
+.signup-btn {
+    background-color: #fcb900;
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(252, 185, 0, 0.2);
+}
+
+.signup-btn:hover {
+    background-color: #ffcc33;
+    color: black !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(252, 185, 0, 0.3);
+}
+
+/* Login Button Styling */
+.login-btn {
+    color: white !important;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fcb900;
+}
+
+/* Making the navbar links more visually distinct */
+.nav-link.special {
+    color: #fcb900 !important;
+}
+
+/* Logo text styling if needed */
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: white;
+    letter-spacing: 0.5px;
+}

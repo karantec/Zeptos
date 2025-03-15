@@ -1,0 +1,37 @@
+.listings-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .listings-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .listings-stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .stat {
+    margin: 0px;
+    
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .count {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .title {
+    font-size: 1em;
+    color: #000000;
+  }
+  

@@ -1,0 +1,15 @@
+.seller-profile-picture {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.edit-profile-icon {
+    cursor: pointer;
+}
+
+th, td{
+    padding-right: 10px;
+    padding-top: 10px;
+}

@@ -1,0 +1,32 @@
+.chat-wrapper {
+  background-color: #909090;
+}
+.chat-header {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+.my-message {
+  align-self: flex-end;
+  background: #4b99ff;
+  color: white;
+  max-width: 75%;
+}
+.other-message {
+  align-self: flex-start;
+  background: #e9ecef;
+  color: black;
+  max-width: 75%;
+}
+.chat-message {
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+}

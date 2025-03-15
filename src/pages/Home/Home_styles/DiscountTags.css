@@ -1,0 +1,100 @@
+/* Ensure the body and html take up the full height */
+html, body {
+    height: 100%;
+    /* margin: 0; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.discount-tags-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: #f9fafd; /* Background color for container */
+    color: #050a30; /* Primary text color */
+    border: 2px dashed #ffb12c; /* Dashed border color */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.discount-tags-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #050a30; /* Primary color for heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.discount-tags-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #050a30; /* Primary color for title */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.discount-tags-description {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.discount-tags-footer {
+    font-size: 1.2rem;
+    color: #050a30; /* Primary color for footer */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.discount-tags-button-unique {
+    padding: 12px 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #ffb12c;
+        border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .discount-tags-button-unique:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .discount-tags-button-unique:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  @media (max-width: 768px) {
+    .discount-tags-button-unique {
+        padding: 12px 24px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        background: #ffb12c;
+            border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .discount-tags-button-unique:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .discount-tags-button-unique:active {
+        transform: translateY(1px);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      }
+    
+  }

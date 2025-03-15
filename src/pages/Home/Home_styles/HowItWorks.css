@@ -1,0 +1,85 @@
+/* Ensure the body and html take up the full height */
+html, body {
+    height: 100%;
+    /* margin: 0; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.how-it-works-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: #f9fafd; /* Background color */
+    color: #050a30; /* Primary text color */
+}
+
+.how-it-works-heading {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #050a30; /* Primary color for heading */
+}
+
+
+
+.how-it-works-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.how-it-works-step {
+    background: rgba(255, 177, 44, 0.2); /* Accent color with more transparency */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    width: 80%;
+    max-width: 800px;
+}
+
+.how-it-works-step-title {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: #050a30; /* Primary color for step titles */
+}
+
+
+
+.how-it-works-step-description {
+    font-size: 1.5rem;
+    margin: 15px 0 0;
+    color: #050a30; /* Primary color for step descriptions */
+}
+
+@media (max-width: 768px) {
+    .how-it-works-heading {
+        font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #050a30; /* Primary color for heading */
+    }
+
+    .how-it-works-step-title {
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: bold;
+        color: #050a30; /* Primary color for step titles */
+    }
+
+    .how-it-works-step-description {
+        font-size: 1.4rem;
+        margin: 15px 0 0;
+        color: #050a30; /* Primary color for step descriptions */
+    }
+    
+}

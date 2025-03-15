@@ -1,0 +1,42 @@
+.orders-container {
+    margin: 20px;
+    /* padding: 20px; */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .orders-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .order-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid black;
+  }
+  
+  .order-stats-table th, .order-stats-table td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  .order-stats-table th {
+    background-color: #41B8D5;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .order-stats-table td {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 35px;
+    border: 1px solid black;
+  }
+  
+  .order-stats-table tr:nth-child(even) td {
+    background-color: #e7f6f8;
+  }
+  

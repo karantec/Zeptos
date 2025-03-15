@@ -1,0 +1,13 @@
+.icon{
+    border: none;
+}
+
+.footer-text{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-text:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}

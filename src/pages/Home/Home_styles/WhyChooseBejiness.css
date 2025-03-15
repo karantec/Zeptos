@@ -1,0 +1,55 @@
+.why-choose-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Center the title and table vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.why-choose-title {
+    color: #050a30;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center text inside the title */
+}
+
+.why-choose-table1 {
+    background-color: #f9fafd;
+    color: #050a30;
+    max-width: 1000px; /* Limit the width of the table */
+    margin-top: 25px;
+    border-collapse: collapse; /* Ensure borders are collapsed */
+}
+
+.why-choose-thead {
+    background-color: #ffb12c;
+    color: #050a30;
+    font-size: 1.5rem;
+}
+
+.why-choose-table1 th, .why-choose-table1 td {
+    font-size: 1.3rem;
+    padding: 15px;
+    text-align: center; /* Center text inside table cells */
+    border: 2px dashed #050a30; /* Dashed border with primary color */
+}
+
+.why-choose-table1 tbody tr:nth-child(odd) {
+    background-color: #f1f5f9;
+}
+
+.why-choose-table1 tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.why-choose-table-bordered {
+    border: 2px dashed #050a30; /* Dashed border for the table */
+}
+
+.why-choose-table-bordered th, .why-choose-table-bordered td {
+    border: 2px dashed #050a30; /* Dashed border for cells */
+}
+
+.why-choose-table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f5f9;
+}

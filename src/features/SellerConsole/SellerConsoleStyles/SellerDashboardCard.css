@@ -1,0 +1,14 @@
+.seller-dashboard-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: black;
+}
+
+.seller-dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.seller-dashboard-card:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

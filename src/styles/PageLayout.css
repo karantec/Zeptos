@@ -1,0 +1,163 @@
+/* Modern Navbar Styling - Zepto inspired */
+.nav-bg-blue {
+  background-color: #050a30 !important;
+  padding: 12px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 12px;
+}
+@media (min-width: 769px) {
+  .mobile-footer {
+    display: none !important;
+  }
+}
+
+/* Search bar container */
+.search-bar-container {
+  max-width: 650px;
+  width: 100%;
+  position: relative;
+}
+
+.search-bar-container .form-control {
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  padding: 10px 16px;
+  font-size: 15px;
+  height: 44px;
+  box-shadow: none;
+  width: 100%;
+}
+
+.search-bar-container .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(252, 185, 0, 0.3);
+  border-color: #fcb900;
+}
+
+.search-bar-container .btn {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  border: none;
+  background: transparent;
+  color: #666;
+  padding: 5px 12px;
+  border-radius: 8px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-container .btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #fcb900;
+}
+
+/* Navigation items */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px !important;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.nav-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 16px !important;
+  color: white !important;
+  font-size: 13px;
+  text-align: center;
+}
+
+.nav-cart svg {
+  margin-bottom: 5px;
+}
+
+/* Logout button */
+.btn-outline-danger {
+  border: 1px solid #dc3545;
+  padding: 7px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive Mobile Navigation - Zepto Style */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; /* Hide only the navigation links, not the entire navbar */
+  }
+
+  .search-bar-container {
+    display: block; /* Ensure search bar remains visible */
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .mobile-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #050a30;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+    padding: 12px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-item {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-item svg {
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+
+  .container-pagelayout {
+    padding-bottom: 65px; /* To prevent content from being hidden behind the navbar */
+  }
+}

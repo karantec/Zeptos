@@ -1,0 +1,142 @@
+.live-market-container-custom {
+  padding: 20px;
+}
+
+.live-market-tag-custom {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  animation: live-market-blink 1s infinite;
+}
+
+@keyframes live-market-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.live-market-cards-container-custom {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.overflow-auto {
+  overflow:hidden;
+}
+
+::-webkit-scrollbar { display: none; }
+.live-market-cards-container-custom::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit-based browsers */
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.live-market-dash-prod-card-custom {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 180px;
+  margin-right: 15px;
+}
+
+.live-market-card-body-custom {
+  padding: 10px;
+}
+
+.live-market-border-top-custom {
+  border-top: 1px solid #ddd;
+}
+
+.live-market-arrow-circle-custom {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-market-arrow-icon-custom {
+  font-size: 1.5rem;
+}
+
+.card h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.live-market-image-container {
+  position: relative;
+}
+
+.live-market-live-tag {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #ffb12c;
+  color: #f9fafd;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  animation: live-market-blink 1s infinite;
+}
+
+
+.live-market-time-left-container {
+  display: flex;
+  align-items: center;
+  background-color: #ff4d4f; /* Red background to highlight urgency */
+  color: #fff; /* White text for contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.live-market-clock-icon {
+  margin-right: 5px;
+}
+
+.live-market-time-left-text {
+  font-size: 14px;
+}
+
+.live-market-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.live-market-card-text {
+  margin-bottom: 5px;
+}
+
+/* .live-market-card {
+  transition: transform 0.3s ease;
+} */
+
+/* .live-market-card:hover {
+  transform: translateY(-5px);
+} */
